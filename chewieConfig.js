@@ -30,7 +30,7 @@ const config = {
   },
 
   generationResult: {
-srcLocation: 'https://github.com/ClaudiSCloud/ClaudiSCloud.github.io.git',
+srcLocation:process.env.RESULT_LOC || 'https://github.com/ClaudiSCloud/ClaudiSCloud.github.io.git', 
     branch: process.env.docuBranch || 'master',
     cloneLocation: 'latestResultRepo'
   },
